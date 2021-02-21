@@ -1,92 +1,92 @@
 @font-face {
-    font-family: 'Ortica-Light'; 
-    src: url('Ortica-Light.woff');  
+  font-family: "Ortica-Light";
+  src: url("Ortica-Light.woff");
 }
 
 @font-face {
-    font-family: 'Ortica-Bold'; 
-    src: url('Ortica-Bold.woff');  
+  font-family: "Ortica-Bold";
+  src: url("Ortica-Bold.woff");
 }
 
 body {
-    width: 50%; 
-    max-width: 700px;
-    margin: auto;
-    padding-bottom: 30px; 
-    font-family: 'Ortica-Light'; 
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 30px;
+  font-family: "Ortica-Light";
+  background-color: white;
 }
 
 h1 {
-    padding-bottom: 15px; 
-    font-family: 'Ortica-Light'; 
-    text-align: center; 
-    font-size: 50px; 
+  padding-bottom: 15px;
+  font-family: "Ortica-Light";
+  text-align: center;
+  font-size: 50px;
 }
 
 a {
-    color: black; 
+  color: black;
 }
 
 b {
-    font-family: 'Ortica-Bold'; 
+  font-family: "Ortica-Bold";
 }
 
 p {
-    padding-bottom: 20px;
-    font-size: 18px; 
-    line-height: 1.6;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* gradient stuff */
 
 #gradient-overlay {
-    will-change: opacity;
-  }
+  will-change: opacity;
+}
+#gradient {
+  transform: scale(1.666667);
+}
+@media (min-width: 600px) {
   #gradient {
-    transform: scale(1.666667);
+    transform: scale(1.333333);
   }
-  @media (min-width: 600px) {
-    #gradient {
-      transform: scale(1.333333);
-    }
+}
+@media (min-width: 960px) {
+  #gradient {
+    transform: scale(1);
   }
-  @media (min-width: 960px) {
-    #gradient {
-      transform: scale(1);
-    }
+}
+.header-home {
+  --fg: 255, 255, 255;
+  --bg: 0, 0, 0;
+}
+.header-home-container {
+  padding-top: 20.833333vw;
+  padding-bottom: 2.5rem;
+}
+@media (orientation: landscape) and (min-width: 960px) {
+  .header-home-container {
+    padding-top: 200px;
   }
+}
+@media (orientation: landscape) and (min-width: 960px) and (min-height: 661px) {
   .header-home {
-    --fg: 255,255,255;
-    --bg: 0,0,0;
+    height: 100vh;
   }
   .header-home-container {
-    padding-top: 20.833333vw;
-    padding-bottom: 2.5rem;
+    padding-top: 0;
   }
-  @media (orientation: landscape) and (min-width: 960px) {
-    .header-home-container {
-      padding-top: 200px;
-    }
-  }
-  @media (orientation: landscape) and (min-width: 960px) and (min-height: 661px) {
-    .header-home {
-      height: 100vh;
-    }
-    .header-home-container {
-      padding-top: 0;
-    }
-  }
-  .observablehq {
-    opacity: 1;
-    transition: opacity 250ms ease-in-out;
-  }
-  .browser-firefox .observablehq {
-    transition: opacity 250ms ease-in-out 250ms;
-  }
-  .observablehq--running {
-    opacity: 0;
-  }
-  .os-ios #gradient {
-    filter: saturate(150%);
-    -webkit-filter: saturate(150%);
-  }
+}
+.observablehq {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+.browser-firefox .observablehq {
+  transition: opacity 250ms ease-in-out 250ms;
+}
+.observablehq--running {
+  opacity: 0;
+}
+.os-ios #gradient {
+  filter: saturate(150%);
+  -webkit-filter: saturate(150%);
+}
