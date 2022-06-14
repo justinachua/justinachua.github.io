@@ -1,51 +1,26 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+@font-face {
+  font-family: "Argesta";
+  src: 
+    url("argestadisplay-regular-webfont.ttf")
+    format('truetype'); 
 }
 
 body {
-  max-width: 700px;
+  padding-top: 30px;
   margin: auto;
-  padding-bottom: 30px;
-  font-family: "Inter";
-  color: black; 
-  padding-left: 60px; 
-  padding-right: 60px; 
-  height: 100%; 
-  padding-top: 60px; 
+  width: 40%;  
+  font-family: "Argesta";
+  font-size: 18px; 
+  background-color: #f8f0e3; 
 }
 
-.intro {
-  padding-bottom: 15px;
-}
-
-img {
-  border-radius: 50%; 
-  width: 110px; 
-  float: right; 
-}
-
-h1 {
-  text-align: center;
-  font-size: 50px;
-}
-
-a {
+a:link {
   color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-b {
-  font-family: "Inter";
-  font-weight: 500; 
-}
-
-p {
-  padding-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-mark {
-  background-color: #FFDCD9; 
+hr {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black; 
 }
