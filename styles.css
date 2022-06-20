@@ -1,17 +1,39 @@
 @font-face {
-  font-family: "Argesta";
+  font-family: "Eiko";
   src: 
-    url("argestadisplay-regular-webfont.ttf")
-    format('truetype'); 
+    url("PPEiko-Thin.otf")
+    format('opentype'); 
+}
+
+@font-face {
+  font-family: "Roboto"; 
+  src: 
+    url("RobotoMono-Light.ttf")
+    format('truetype');
 }
 
 body {
-  padding-top: 30px;
-  margin: auto;
   width: 40%;  
-  font-family: "Argesta";
-  font-size: 18px; 
+  margin: 0;
+  padding-top: 0px; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Eiko";
+  font-size: 25px; 
   background-color: #f8f0e3; 
+}
+
+.links {
+  font-family: "Roboto"; 
+  font-size: 16px; 
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 a:link {
@@ -21,6 +43,9 @@ a:link {
 }
 
 hr {
-  border-top: 0.5px solid black;
-  border-bottom: 0.5px solid black; 
+  border: none;
+    height: 0.7px;
+    color: #333;
+    background-color: #333; 
+
 }
